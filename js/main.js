@@ -121,3 +121,39 @@ function initActiveNavLink() {
         });
     });
 }
+
+// ============================================
+// MODAL FUNCTIONS
+// ============================================
+function openModal(programId) {
+    const modal = document.getElementById(`modal-${programId}`);
+    const overlay = document.getElementById('modalOverlay');
+    
+    if (modal && overlay) {
+        modal.classList.add('active');
+        overlay.classList.add('active');
+        document.body.classList.add('modal-open');
+    }
+}
+
+function closeModal() {
+    const modals = document.querySelectorAll('.modal');
+    const overlay = document.getElementById('modalOverlay');
+    
+    modals.forEach(modal => {
+        modal.classList.remove('active');
+    });
+    
+    if (overlay) {
+        overlay.classList.remove('active');
+    }
+    
+    document.body.classList.remove('modal-open');
+}
+
+// Close modal on ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});

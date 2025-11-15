@@ -444,10 +444,149 @@
     </section>
     
     <!-- ============================================ -->
-    <!-- PROGRAMAS -->
+    <!-- SECCIÓN DE PROGRAMAS -->
     <!-- ============================================ -->
-    <section id="programas">
-        <!-- SPRINT 4: Crear sección de programas aquí -->
+    <section id="programas" class="section-padding bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4">
+                    Programas Especializados
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-textPrimary mb-6">
+                    Conoce Nuestros Programas de <span class="text-accent">Neuroterapia</span>
+                </h2>
+                <p class="text-lg text-textSecondary">
+                    Cada programa está diseñado para mejorar y capacitar tu cerebro en habilidades específicas. Las sesiones son variables y ajustables según tus resultados.
+                </p>
+            </div>
+            
+            <!-- Programs Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                
+                <!-- Programa 1: Atención y Concentración -->
+                <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-header" style="background: linear-gradient(135deg, #4A90B5, #2D5A7B);">
+                        <div class="program-icon">
+                            <i class="fas fa-brain text-5xl text-white"></i>
+                        </div>
+                        <span class="program-badge">20-30 sesiones</span>
+                    </div>
+                    <div class="program-body">
+                        <h3 class="text-2xl font-heading font-bold text-textPrimary mb-3">
+                            Atención y Concentración
+                        </h3>
+                        <p class="text-textSecondary mb-4 leading-relaxed">
+                            Diseñado para mejorar la atención mediante entrenamiento de patrones cerebrales asociados a la concentración.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-textPrimary mb-2">Ideal para:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="program-tag">Estudiantes</span>
+                                <span class="program-tag">Profesionales</span>
+                                <span class="program-tag">TDAH</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal('atencion')" class="btn-program w-full">
+                            <span>Ver Detalles</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Programa 2: Regulación Emocional -->
+                <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-header" style="background: linear-gradient(135deg, #00B4D8, #0096C7);">
+                        <div class="program-icon">
+                            <i class="fas fa-heart-pulse text-5xl text-white"></i>
+                        </div>
+                        <span class="program-badge">25-35 sesiones</span>
+                    </div>
+                    <div class="program-body">
+                        <h3 class="text-2xl font-heading font-bold text-textPrimary mb-3">
+                            Regulación Emocional
+                        </h3>
+                        <p class="text-textSecondary mb-4 leading-relaxed">
+                            Enfocado en manejar emociones, reduciendo ansiedad y mejorando la resiliencia al estrés.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-textPrimary mb-2">Ideal para:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="program-tag">Ansiedad</span>
+                                <span class="program-tag">Estrés</span>
+                                <span class="program-tag">Regulación</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal('emocional')" class="btn-program w-full">
+                            <span>Ver Detalles</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Programa 3: Mejora del Sueño -->
+                <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-header" style="background: linear-gradient(135deg, #2D5A7B, #1E3A5F);">
+                        <div class="program-icon">
+                            <i class="fas fa-moon text-5xl text-white"></i>
+                        </div>
+                        <span class="program-badge">15-25 sesiones</span>
+                    </div>
+                    <div class="program-body">
+                        <h3 class="text-2xl font-heading font-bold text-textPrimary mb-3">
+                            Mejora del Sueño
+                        </h3>
+                        <p class="text-textSecondary mb-4 leading-relaxed">
+                            Promueve patrones de sueño más profundos para mejorar la calidad de descanso y reducir el insomnio.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-textPrimary mb-2">Ideal para:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="program-tag">Insomnio</span>
+                                <span class="program-tag">Sueño irregular</span>
+                                <span class="program-tag">Descanso</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal('sueno')" class="btn-program w-full">
+                            <span>Ver Detalles</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Programa 4: Rendimiento Máximo -->
+                <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-header" style="background: linear-gradient(135deg, #0096C7, #00B4D8);">
+                        <div class="program-icon">
+                            <i class="fas fa-trophy text-5xl text-white"></i>
+                        </div>
+                        <span class="program-badge">Personalizado</span>
+                    </div>
+                    <div class="program-body">
+                        <h3 class="text-2xl font-heading font-bold text-textPrimary mb-3">
+                            Rendimiento Máximo
+                        </h3>
+                        <p class="text-textSecondary mb-4 leading-relaxed">
+                            Personalizado para atletas y profesionales que buscan optimizar sus funciones cognitivas.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-textPrimary mb-2">Ideal para:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="program-tag">Atletas</span>
+                                <span class="program-tag">Ejecutivos</span>
+                                <span class="program-tag">Alto rendimiento</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal('rendimiento')" class="btn-program w-full">
+                            <span>Ver Detalles</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </section>
     
     <!-- ============================================ -->
@@ -477,6 +616,245 @@
     <footer id="footer">
         <!-- SPRINT 6: Crear footer aquí -->
     </footer>
+    
+    <!-- ============================================ -->
+    <!-- MODALES DE PROGRAMAS -->
+    <!-- ============================================ -->
+    
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay" onclick="closeModal()"></div>
+    
+    <!-- Modal: Atención y Concentración -->
+    <div id="modal-atencion" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header" style="background: linear-gradient(135deg, #4A90B5, #2D5A7B);">
+                <i class="fas fa-brain text-5xl text-white mb-4"></i>
+                <h2 class="text-3xl font-heading font-bold text-white">Programa de Atención y Concentración</h2>
+                <span class="modal-badge">20-30 sesiones</span>
+            </div>
+            
+            <div class="modal-body">
+                <p class="text-lg text-textSecondary mb-6">
+                    Este programa está específicamente diseñado para personas que buscan mejorar su capacidad de atención y concentración. A través de sesiones personalizadas, entrenamos los patrones cerebrales asociados con estados de concentración profunda.
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-check-circle text-accent mr-2"></i>
+                        ¿Qué Incluye?
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Evaluación inicial con mapeo cerebral (EEG)</li>
+                        <li>20-30 sesiones de entrenamiento personalizado</li>
+                        <li>Monitoreo y ajuste continuo del protocolo</li>
+                        <li>Reportes de progreso cada 10 sesiones</li>
+                        <li>Recomendaciones complementarias</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-star text-accent mr-2"></i>
+                        Beneficios Esperados
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Mejora sostenida en la capacidad de concentración</li>
+                        <li>Reducción de distracciones</li>
+                        <li>Mayor productividad académica o laboral</li>
+                        <li>Resultados medibles y duraderos</li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5215512345678?text=Hola%20Yerem,%20me%20interesa%20el%20Programa%20de%20Atención%20y%20Concentración.%20¿Podrías%20darme%20más%20información?" target="_blank" class="btn-primary flex-1 text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Agendar Consulta
+                    </a>
+                    <button onclick="closeModal()" class="btn-secondary flex-1">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal: Regulación Emocional -->
+    <div id="modal-emocional" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header" style="background: linear-gradient(135deg, #00B4D8, #0096C7);">
+                <i class="fas fa-heart-pulse text-5xl text-white mb-4"></i>
+                <h2 class="text-3xl font-heading font-bold text-white">Programa de Regulación Emocional</h2>
+                <span class="modal-badge">25-35 sesiones</span>
+            </div>
+            
+            <div class="modal-body">
+                <p class="text-lg text-textSecondary mb-6">
+                    Un programa integral para aprender a regular tus emociones de manera efectiva. Ideal para personas que experimentan ansiedad, estrés o dificultades en el manejo emocional.
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-check-circle text-accent mr-2"></i>
+                        ¿Qué Incluye?
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Evaluación psicofisiológica completa</li>
+                        <li>25-35 sesiones de neurorregulación emocional</li>
+                        <li>Protocolos específicos para ansiedad y estrés</li>
+                        <li>Técnicas complementarias de regulación</li>
+                        <li>Seguimiento personalizado</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-star text-accent mr-2"></i>
+                        Beneficios Esperados
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Reducción significativa de ansiedad</li>
+                        <li>Mayor resiliencia al estrés</li>
+                        <li>Mejor control emocional</li>
+                        <li>Mejora en relaciones interpersonales</li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5215512345678?text=Hola%20Yerem,%20me%20interesa%20el%20Programa%20de%20Regulación%20Emocional.%20¿Podrías%20darme%20más%20información?" target="_blank" class="btn-primary flex-1 text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Agendar Consulta
+                    </a>
+                    <button onclick="closeModal()" class="btn-secondary flex-1">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal: Mejora del Sueño -->
+    <div id="modal-sueno" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header" style="background: linear-gradient(135deg, #2D5A7B, #1E3A5F);">
+                <i class="fas fa-moon text-5xl text-white mb-4"></i>
+                <h2 class="text-3xl font-heading font-bold text-white">Programa de Mejora del Sueño</h2>
+                <span class="modal-badge">15-25 sesiones</span>
+            </div>
+            
+            <div class="modal-body">
+                <p class="text-lg text-textSecondary mb-6">
+                    Diseñado para personas que luchan con problemas de sueño. Este programa trabaja directamente con los patrones cerebrales que regulan el ciclo sueño-vigilia.
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-check-circle text-accent mr-2"></i>
+                        ¿Qué Incluye?
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Análisis de patrones de sueño</li>
+                        <li>15-25 sesiones de entrenamiento nocturno</li>
+                        <li>Protocolos de relajación cerebral</li>
+                        <li>Higiene del sueño personalizada</li>
+                        <li>Monitoreo de mejoras semanales</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-star text-accent mr-2"></i>
+                        Beneficios Esperados
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Mejora en la calidad del sueño</li>
+                        <li>Reducción del tiempo para conciliar el sueño</li>
+                        <li>Sueño más profundo y reparador</li>
+                        <li>Mayor energía durante el día</li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5215512345678?text=Hola%20Yerem,%20me%20interesa%20el%20Programa%20de%20Mejora%20del%20Sueño.%20¿Podrías%20darme%20más%20información?" target="_blank" class="btn-primary flex-1 text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Agendar Consulta
+                    </a>
+                    <button onclick="closeModal()" class="btn-secondary flex-1">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal: Rendimiento Máximo -->
+    <div id="modal-rendimiento" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header" style="background: linear-gradient(135deg, #0096C7, #00B4D8);">
+                <i class="fas fa-trophy text-5xl text-white mb-4"></i>
+                <h2 class="text-3xl font-heading font-bold text-white">Programa de Rendimiento Máximo</h2>
+                <span class="modal-badge">Personalizado</span>
+            </div>
+            
+            <div class="modal-body">
+                <p class="text-lg text-textSecondary mb-6">
+                    Un programa de elite diseñado para quienes buscan llevar su rendimiento cognitivo al siguiente nivel. Ideal para atletas de alto rendimiento, ejecutivos y profesionales exigentes.
+                </p>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-check-circle text-accent mr-2"></i>
+                        ¿Qué Incluye?
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Evaluación integral de rendimiento</li>
+                        <li>Protocolo completamente personalizado</li>
+                        <li>Optimización de estados de flow</li>
+                        <li>Entrenamiento en toma de decisiones</li>
+                        <li>Análisis de métricas de rendimiento</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-heading font-bold text-textPrimary mb-3 flex items-center">
+                        <i class="fas fa-star text-accent mr-2"></i>
+                        Beneficios Esperados
+                    </h3>
+                    <ul class="modal-list">
+                        <li>Optimización del rendimiento cognitivo</li>
+                        <li>Mayor velocidad de procesamiento</li>
+                        <li>Mejor toma de decisiones bajo presión</li>
+                        <li>Estados de flow más frecuentes</li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5215512345678?text=Hola%20Yerem,%20me%20interesa%20el%20Programa%20de%20Rendimiento%20Máximo.%20¿Podrías%20darme%20más%20información?" target="_blank" class="btn-primary flex-1 text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Agendar Consulta
+                    </a>
+                    <button onclick="closeModal()" class="btn-secondary flex-1">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
