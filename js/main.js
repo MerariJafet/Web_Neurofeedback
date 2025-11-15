@@ -157,3 +157,22 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
+// ============================================
+// FAQ ACCORDION
+// ============================================
+
+function toggleFAQ(button) {
+    const faqItem = button.parentElement;
+    const wasActive = faqItem.classList.contains('active');
+    
+    // Cerrar todos los FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Si no estaba activo, abrirlo
+    if (!wasActive) {
+        faqItem.classList.add('active');
+    }
+}
