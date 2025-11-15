@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurofeedback - Monitoreo en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🧠 Sistema de Neurofeedback</h1>
+            <p class="subtitle">Monitoreo de Actividad Cerebral en Tiempo Real</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="control-panel">
+            <h2>Panel de Control</h2>
+            <div class="controls">
+                <button id="startBtn" class="btn btn-primary">Iniciar Sesión</button>
+                <button id="stopBtn" class="btn btn-secondary" disabled>Detener Sesión</button>
+                <button id="resetBtn" class="btn btn-danger">Reiniciar</button>
+            </div>
+            <div class="session-info">
+                <div class="info-item">
+                    <span class="label">Estado:</span>
+                    <span id="status" class="value">Inactivo</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Duración:</span>
+                    <span id="duration" class="value">00:00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <h2>Visualización de Ondas Cerebrales</h2>
+            <div class="chart-container">
+                <canvas id="brainwaveChart"></canvas>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <h2>Métricas en Tiempo Real</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Alpha (8-13 Hz)</h3>
+                    <div class="metric-value" id="alphaValue">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="alphaProgress"></div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h3>Beta (13-30 Hz)</h3>
+                    <div class="metric-value" id="betaValue">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="betaProgress"></div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h3>Theta (4-8 Hz)</h3>
+                    <div class="metric-value" id="thetaValue">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="thetaProgress"></div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h3>Delta (0.5-4 Hz)</h3>
+                    <div class="metric-value" id="deltaValue">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="deltaProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h2>Retroalimentación</h2>
+            <div class="feedback-container">
+                <div id="feedbackMessage" class="feedback-message">
+                    Presiona "Iniciar Sesión" para comenzar el monitoreo
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sistema de Neurofeedback. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
