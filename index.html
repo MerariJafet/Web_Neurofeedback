@@ -73,15 +73,177 @@
     <!-- ============================================ -->
     <!-- HEADER & NAVIGATION -->
     <!-- ============================================ -->
-    <header id="header">
-        <!-- SPRINT 2: Crear navegación aquí -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <nav id="navbar" class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
+            
+            <!-- Logo / Brand -->
+            <div class="flex items-center">
+                <a href="#hero" class="text-2xl lg:text-3xl font-heading font-bold text-primary hover:text-secondary transition-colors duration-300">
+                    <i class="fas fa-brain mr-2 text-accent"></i>
+                    Yerem Acero
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden lg:flex space-x-8 items-center">
+                <li>
+                    <a href="#hero" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#beneficios" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Beneficios
+                    </a>
+                </li>
+                <li>
+                    <a href="#como-funciona" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Cómo Funciona
+                    </a>
+                </li>
+                <li>
+                    <a href="#programas" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Programas
+                    </a>
+                </li>
+                <li>
+                    <a href="#faq" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="nav-link text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Contacto
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="btn btn-primary">
+                        Agendar Cita
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-primary focus:outline-none" aria-label="Toggle menu">
+                <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200">
+            <ul class="container mx-auto px-4 py-6 space-y-4">
+                <li>
+                    <a href="#hero" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#beneficios" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Beneficios
+                    </a>
+                </li>
+                <li>
+                    <a href="#como-funciona" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Cómo Funciona
+                    </a>
+                </li>
+                <li>
+                    <a href="#programas" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Programas
+                    </a>
+                </li>
+                <li>
+                    <a href="#faq" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="mobile-nav-link block py-2 text-textPrimary hover:text-accent font-medium transition-colors duration-300">
+                        Contacto
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="btn btn-primary w-full text-center block">
+                        Agendar Cita
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     
     <!-- ============================================ -->
     <!-- HERO SECTION -->
     <!-- ============================================ -->
-    <section id="hero">
-        <!-- SPRINT 2: Crear hero section aquí -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent">
+        
+        <!-- Background Pattern Overlay -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.4&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="container mx-auto px-4 lg:px-8 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <!-- Badge -->
+                <div class="inline-block mb-6" data-aos="fade-down">
+                    <span class="bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-semibold border border-white/30">
+                        ✨ Especialista Certificado en Neurofeedback
+                    </span>
+                </div>
+                
+                <!-- Main Title -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="200">
+                    Transforma tu Bienestar Mental con
+                    <span class="text-yellow-300">Neurofeedback</span>
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+                    Soy <strong>Yerem Acero</strong>, especialista certificado en Neuroterapia. Te ayudo a mejorar tu atención, regular emociones y optimizar tu rendimiento cognitivo con tecnología de vanguardia y terapias basadas en evidencia científica.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contacto" class="btn-primary-hero group">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Agenda tu Consulta
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                    </a>
+                    <a href="#beneficios" class="btn-secondary-hero group">
+                        Conocer Más
+                        <i class="fas fa-chevron-down ml-2 group-hover:translate-y-1 transition-transform duration-300"></i>
+                    </a>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="800">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">100+</div>
+                        <div class="text-sm text-white/80">Pacientes Atendidos</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">95%</div>
+                        <div class="text-sm text-white/80">Tasa de Mejora</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">5+</div>
+                        <div class="text-sm text-white/80">Años de Experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#beneficios" class="text-white/80 hover:text-white transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl" data-aos="fade" data-aos-delay="1000"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-white/10 rounded-full blur-xl" data-aos="fade" data-aos-delay="1200"></div>
     </section>
     
     <!-- ============================================ -->

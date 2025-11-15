@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initMobileMenu();
     initStickyHeader();
+    initActiveNavLink();
 });
 
 // ============================================
@@ -18,11 +19,26 @@ function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
+            
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                // Cerrar menú mobile si está abierto
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+                
+                // Calcular offset del header
+                const header = document.getElementById('header');
+                const headerHeight = header ? header.offsetHeight : 80;
+                
+                const targetPosition = target.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
@@ -30,15 +46,78 @@ function initSmoothScroll() {
 }
 
 // ============================================
-// MOBILE MENU (se completará en Sprint 2)
+// MOBILE MENU
 // ============================================
 function initMobileMenu() {
-    // TODO: Implementar en Sprint 2
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+}
+
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    
+    if (mobileMenu && menuIcon) {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Cambiar ícono de hamburguesa a X
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        } else {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+        }
+    }
 }
 
 // ============================================
-// STICKY HEADER (se completará en Sprint 2)
+// STICKY HEADER
 // ============================================
 function initStickyHeader() {
-    // TODO: Implementar en Sprint 2
+    const header = document.getElementById('header');
+    
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+                header.classList.remove('shadow-md');
+            } else {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-lg');
+            }
+        });
+    }
+}
+
+// ============================================
+// ACTIVE NAV LINK
+// ============================================
+function initActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', function() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.scrollY >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('text-accent', 'border-b-2', 'border-accent');
+            
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('text-accent', 'border-b-2', 'border-accent');
+            }
+        });
+    });
 }
