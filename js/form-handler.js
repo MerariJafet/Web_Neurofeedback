@@ -59,7 +59,7 @@ function handleFormSubmit(e) {
     // Reemplaza 'TU_EMAIL_AQUI' con el email real de Yerem
     // Descomenta este bloque cuando quieras usar FormSubmit:
     /*
-    const formSubmitURL = 'https://formsubmit.co/TU_EMAIL_AQUI@ejemplo.com';
+    const formSubmitURL = 'https://formsubmit.co/yerem.salem.acero@gmail.com';
     
     fetch(formSubmitURL, {
         method: 'POST',
