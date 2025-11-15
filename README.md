@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Yerem Acero - Neurofeedback Landing Page
 
 ## 📋 Descripción
@@ -76,3 +77,6 @@ Proyecto desarrollado siguiendo metodología de sprints:
 ---
 
 © 2025 Yerem Acero - Todos los derechos reservados
+=======
+# Web_Neurofeedback
+>>>>>>> 348ab4034b21d29cd8f81d5fe11bcf908a0ddccc
