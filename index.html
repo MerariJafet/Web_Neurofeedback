@@ -831,16 +831,297 @@
     <!-- ============================================ -->
     <!-- CONTACTO -->
     <!-- ============================================ -->
-    <section id="contacto">
-        <!-- SPRINT 6: Crear sección de contacto aquí -->
-    </section>
+    <!-- ============================================ -->
+<!-- SECCIÓN DE CONTACTO -->
+<!-- ============================================ -->
+<section id="contacto" class="section-padding bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden">
+    
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold mb-4 border border-white/30">
+                Agenda tu Cita
+            </span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+                ¿Listo para Transformar tu <span class="text-yellow-300">Bienestar Mental</span>?
+            </h2>
+            <p class="text-lg text-white/90">
+                Contáctame ahora y descubre cómo el Neurofeedback puede ayudarte a alcanzar tus objetivos.
+            </p>
+        </div>
+        
+        <!-- Contact Options Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5215512345678?text=Hola%20Yerem,%20me%20gustaría%20agendar%20una%20consulta%20inicial." target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold mb-2">WhatsApp</h3>
+                <p class="text-sm mb-3 opacity-80">Respuesta rápida y directa</p>
+                <span class="contact-link">
+                    Enviar Mensaje
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </span>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:yerem.acero@ejemplo.com?subject=Consulta%20sobre%20Neurofeedback" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold mb-2">Email</h3>
+                <p class="text-sm mb-3 opacity-80">yerem.acero@ejemplo.com</p>
+                <span class="contact-link">
+                    Enviar Email
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </span>
+            </a>
+            
+            <!-- Teléfono -->
+            <a href="tel:+525512345678" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-icon">
+                    <i class="fas fa-phone text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold mb-2">Teléfono</h3>
+                <p class="text-sm mb-3 opacity-80">+52 55 1234 5678</p>
+                <span class="contact-link">
+                    Llamar Ahora
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </span>
+            </a>
+            
+        </div>
+        
+        <!-- Formulario y Mapa -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Formulario de Contacto -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8" data-aos="fade-right">
+                <h3 class="text-2xl font-heading font-bold text-white mb-6">Envíame un Mensaje</h3>
+                
+                <form id="contactForm" class="space-y-4">
+                    
+                    <div>
+                        <label for="name" class="block text-white text-sm font-semibold mb-2">Nombre Completo *</label>
+                        <input type="text" id="name" name="name" required class="contact-input" placeholder="Juan Pérez">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-white text-sm font-semibold mb-2">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required class="contact-input" placeholder="tu@email.com">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-white text-sm font-semibold mb-2">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" required class="contact-input" placeholder="+52 555 123 4567">
+                    </div>
+                    
+                    <div>
+                        <label for="program" class="block text-white text-sm font-semibold mb-2">Programa de Interés</label>
+                        <select id="program" name="program" class="contact-input">
+                            <option value="">Selecciona un programa</option>
+                            <option value="atencion">Atención y Concentración</option>
+                            <option value="emocional">Regulación Emocional</option>
+                            <option value="sueno">Mejora del Sueño</option>
+                            <option value="rendimiento">Rendimiento Máximo</option>
+                            <option value="general">Consulta General</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-white text-sm font-semibold mb-2">Mensaje *</label>
+                        <textarea id="message" name="message" required rows="4" class="contact-input" placeholder="Cuéntame brevemente qué te gustaría lograr..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit w-full">
+                        <span id="submitText">Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                    
+                    <p id="formMessage" class="text-sm text-center text-white hidden"></p>
+                    
+                </form>
+            </div>
+            
+            <!-- Información y Mapa -->
+            <div class="space-y-6" data-aos="fade-left">
+                
+                <!-- Información de Contacto -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6">
+                    <h3 class="text-xl font-heading font-bold text-white mb-4">Información de Contacto</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-yellow-300 text-xl mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold">Ubicación</p>
+                                <p class="text-white/80 text-sm">Ciudad de México, México</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-yellow-300 text-xl mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold">Horarios</p>
+                                <p class="text-white/80 text-sm">Lun - Vie: 9:00 - 19:00</p>
+                                <p class="text-white/80 text-sm">Sáb: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-yellow-300 text-xl mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold">Email</p>
+                                <p class="text-white/80 text-sm">yerem.acero@ejemplo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapa (Placeholder) -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-2 overflow-hidden">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt text-6xl text-white/50 mb-4"></i>
+                        <p class="text-white/80 text-sm">Mapa de ubicación</p>
+                        <p class="text-white/60 text-xs mt-2">Se integrará Google Maps aquí</p>
+                    </div>
+                    <!-- Para integrar Google Maps real, reemplazar el div de arriba con:
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=TU_EMBED_URL_AQUI" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    -->
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
     
     <!-- ============================================ -->
     <!-- FOOTER -->
     <!-- ============================================ -->
-    <footer id="footer">
-        <!-- SPRINT 6: Crear footer aquí -->
-    </footer>
+    <!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
+<footer id="footer" class="bg-gradient-to-br from-textPrimary via-primary to-secondary text-white">
+    
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-4 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Columna 1: Sobre Nosotros -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="mb-6">
+                    <a href="#hero" class="text-2xl font-heading font-bold flex items-center gap-2 hover:text-accent transition-colors duration-300">
+                        <i class="fas fa-brain text-accent"></i>
+                        Yerem Acero
+                    </a>
+                </div>
+                <p class="text-white/80 text-sm leading-relaxed mb-4">
+                    Especialista certificado en Neurofeedback. Transformando vidas a través de terapias basadas en evidencia científica.
+                </p>
+                <!-- Redes Sociales -->
+                <div class="flex gap-3">
+                    <a href="https://facebook.com/yeremacero" target="_blank" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/yeremacero" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yeremacero" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/5215512345678" target="_blank" class="social-icon" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Columna 2: Enlaces Rápidos -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-lg font-heading font-bold mb-4">Enlaces Rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#hero" class="footer-link">Inicio</a></li>
+                    <li><a href="#beneficios" class="footer-link">Beneficios</a></li>
+                    <li><a href="#como-funciona" class="footer-link">Cómo Funciona</a></li>
+                    <li><a href="#programas" class="footer-link">Programas</a></li>
+                    <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
+                    <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3: Programas -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-lg font-heading font-bold mb-4">Programas</h3>
+                <ul class="space-y-2">
+                    <li><a href="#programas" class="footer-link">Atención y Concentración</a></li>
+                    <li><a href="#programas" class="footer-link">Regulación Emocional</a></li>
+                    <li><a href="#programas" class="footer-link">Mejora del Sueño</a></li>
+                    <li><a href="#programas" class="footer-link">Rendimiento Máximo</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4: Contacto -->
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-lg font-heading font-bold mb-4">Contacto</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-phone text-accent mt-1"></i>
+                        <div>
+                            <p class="text-sm text-white/60">Teléfono</p>
+                            <a href="tel:+525512345678" class="text-white hover:text-accent transition-colors">+52 55 1234 5678</a>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-envelope text-accent mt-1"></i>
+                        <div>
+                            <p class="text-sm text-white/60">Email</p>
+                            <a href="mailto:yerem.acero@ejemplo.com" class="text-white hover:text-accent transition-colors break-all">yerem.acero@ejemplo.com</a>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-map-marker-alt text-accent mt-1"></i>
+                        <div>
+                            <p class="text-sm text-white/60">Ubicación</p>
+                            <p class="text-white">Ciudad de México, México</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10">
+        <div class="container mx-auto px-4 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p class="text-white/60 text-center md:text-left">
+                    © 2025 Yerem Acero - Neurofeedback. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-white/60 hover:text-white transition-colors">Política de Privacidad</a>
+                    <a href="#" class="text-white/60 hover:text-white transition-colors">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
     
     <!-- ============================================ -->
     <!-- MODALES DE PROGRAMAS -->
