@@ -190,4 +190,131 @@ h3 {
     animation: bounce 2s infinite;
 }
 
+/* ============================================
+   SECCIÓN DE BENEFICIOS
+   ============================================ */
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    transition: width 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(45, 90, 123, 0.15);
+    border-color: var(--color-accent);
+}
+
+.benefit-card:hover::before {
+    width: 100%;
+}
+
+.benefit-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 180, 216, 0.3);
+}
+
+.benefit-card:hover .benefit-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 24px rgba(0, 180, 216, 0.4);
+}
+
+.benefit-icon-wrapper i {
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon-wrapper i {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   SECCIÓN CÓMO FUNCIONA - TIMELINE
+   ============================================ */
+
+.process-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.process-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(45, 90, 123, 0.15);
+    border-color: var(--color-accent);
+}
+
+.process-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 180, 216, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.process-card:hover .process-number {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 180, 216, 0.4);
+}
+
+.process-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-background);
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: all 0.3s ease;
+}
+
+.process-card:hover .process-icon {
+    background: var(--color-accent);
+    transform: rotate(360deg);
+}
+
+.process-card:hover .process-icon i {
+    color: white !important;
+}
+
 /* Más estilos se añadirán en los siguientes sprints */
