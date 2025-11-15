@@ -1,0 +1,5 @@
+// ============================================
+// ANIMATIONS.JS - Animaciones personalizadas
+// ============================================
+
+// Las animaciones se implementarán en Sprint 2 y 3
